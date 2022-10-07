@@ -29,7 +29,7 @@
     <main>
       <section id="intro">
         <div class="intro_text">
-          <h2>Quo Fioniam Fuga buccis publicum videre mi est indirecte si medicus</h2>
+          <h2>Quo Fioniam Fuga buccis publicum videre</h2>
           <input type="text"></input><button type="button">Request Demo &#x2794;</button>
         </div>
         <div class="intro_graphics">
@@ -98,13 +98,30 @@
   </body>
   <template id="card_template">
     <div class="card">
-      <img class="card_image" />
+      <!-- container that holds the image and the graphics for the animation   -->
+      <!-- I can use  this to place the image and the loader on top eachother   -->
+  
+     <!--  <div class="centering_container"> -->
+      <!--   <div class="c_loader">
+          <div class="load_ball"></div>
+          <div class="load_ball"></div>
+          <div class="load_ball"></div>
+          <div class="load_ball"></div>
+          <div class="load_ball"></div>
+  
+        </div> -->
+        <!--  </div> -->
+        <img class="card_image" alt="" />
+      <div class="info_wrapper">
       <h3 class="card_name"></h3>
       <p class="card_slogan"></p>
       <p class="card_title"></p>
       <p class="card_mail"></p>
-      <input type="button" value="Remove" class="card_button_negative"/>
-      <input type="button" value="Accept" class="card_button_positive"/>
+      <div class="button_container">
+      <input type="button" value="Remove" class="card_button_negative" />
+      <input type="button" value="Accept" class="card_button_positive" />
+      </div>
+      </div>
     </div>
   </template>
 </html>

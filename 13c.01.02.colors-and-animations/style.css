@@ -16,7 +16,57 @@
   --color-accent2: #fe175b;
   /* Notice you can do this: --color-accent2: var(--color-accent1);*/
 }
+/*dark-mode*/
+html[data-theme="dark"] {
+  --color-primary: #262333;
+  --color-primary2: #ece8e8;
+  --color-accent1: #fff;
+  --color-secondary1: #262333;
+  --color-nav-bg: #171422;
+  --nav-button-dm: #ece8e8;
+  --color-light-on-dark: #ece8e8;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
 
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 4rem;
+  height: 2rem;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 0.25rem;
+  left: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #bada55;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 2rem;
+}
 /* Fonts */
 html {
   font-family: "Poppins", sans-serif;
@@ -72,7 +122,18 @@ a:hover {
 button {
   display: inline-block;
   height: 3rem;
-  padding: 1rem 2rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #222;
+  color: #eee;
+}
+.theme_btn {
+  display: inline-block;
+  height: 3rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
   border: none;
   font-size: 1rem;
   text-align: center;
@@ -103,11 +164,13 @@ nav {
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-primary2);
+  background-color: var(--color-primary1);
+  background-color: var(--color-nav-bg);
 }
 
 nav a {
   color: var(--color-secondary1);
+  color: var(--color-light-on-dark);
   text-decoration: none;
 }
 
@@ -124,6 +187,9 @@ nav li {
 nav button {
   color: var(--color-primary1);
   background-color: var(--color-accent1);
+  /* Dark mode */
+  background-color: var(--nav-button-dm);
+  color: var(--color-secondary1);
 }
 
 /* Header */

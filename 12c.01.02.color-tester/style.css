@@ -1,15 +1,32 @@
 * {
   margin: 0px;
   padding: 0px;
+  list-style: none;
 }
 
 :root {
-  --color-primary1: #f4feff;
+  /*    --color-primary1: #f4feff;
   --color-primary2: #f5f5f5;
   --color-secondary1: #3c3947;
   --color-secondary2: #676b82;
   --color-accent1: #230078;
-  --color-accent2: #fe175b;
+  --color-accent2: #fe175b; */
+  /* version 2 */
+  /*   --color-primary1: #e8eaee;
+  --color-primary2: #f5f5f5;
+  --color-secondary1: #2e2827;
+  --color-secondary2: #676b82;
+  --color-accent1: #2751c0;
+  --color-accent2: #ed2839;
+  --color-accentCTA: #ed2839; */
+  /* version 3 */
+  --color-primary1: #272635;
+  --color-primary2: #383747;
+  --color-secondary1: #fbf5f3;
+  --color-secondary2: #e4e3e3;
+  --color-accent1: #e98074;
+  --color-accent2: #e85a4f;
+  --color-accentCTA: #e85a4f;
   /* Notice you can do this: --color-accent2: var(--color-accent1);*/
 }
 
