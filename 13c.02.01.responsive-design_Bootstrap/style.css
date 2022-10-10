@@ -1,0 +1,8 @@
+/* Tip, copy paste from 13c.01.01 & 13c.01.02 to get fonts and colors up and running ... */
+.advantages_cards {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.25rem;
+  justify-content: center;
+}
