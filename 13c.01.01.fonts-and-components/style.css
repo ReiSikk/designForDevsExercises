@@ -6,7 +6,10 @@
 }
 
 body {
-  max-width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-primary1);
   overflow-x: hidden;
 }
 .bigscreen_wrapper {
