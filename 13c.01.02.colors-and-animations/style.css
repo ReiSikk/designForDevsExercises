@@ -156,9 +156,9 @@ input[type="text"] {
 .progress {
   position: fixed;
   z-index: 200;
-  transform-origin: 5px top;
-  height: 100vh;
-  width: 5px;
+  transform-origin: left;
+  width: 100vw;
+  height: 5px;
   background-color: var(--color-accent2);
 }
 nav {
@@ -197,7 +197,6 @@ nav button {
 /* Header */
 header {
   display: flex;
-  min-height: 80vh;
   padding: 5rem;
   align-items: center;
   justify-content: space-around;
@@ -239,7 +238,7 @@ header button {
 
 /* product section */
 #product {
-  padding: 5rem 3rem;
+  padding: 3rem 3rem;
   background-color: var(--color-primary1);
   background-color: var(--color-product-dm);
 }
@@ -302,7 +301,7 @@ header button {
 /* highlight sections */
 .highlight {
   display: flex;
-  min-height: 70vh;
+  min-height: 50vh;
   padding: 2rem;
   align-items: center;
   justify-content: space-around;

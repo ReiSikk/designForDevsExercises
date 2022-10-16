@@ -44,7 +44,7 @@ function checkTheme() {
 
 /* scrolling animations */
 //PROGRESS BAR
-scroll(animate(".progress", { scaleY: [0, 1] }));
+scroll(animate(".progress", { scaleX: [0, 1] }));
 
 // Selector
 inView(".highlight h2", (info) => {
