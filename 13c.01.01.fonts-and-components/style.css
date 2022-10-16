@@ -6,8 +6,12 @@
 }
 
 body {
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+}
+.bigscreen_wrapper {
+  max-width: 1440px;
+  margin: auto;
 }
 img {
   object-fit: cover;
@@ -38,7 +42,6 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 3rem 0 1.38rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.3;
@@ -142,13 +145,20 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: var(--color-primary1);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .header_text {
   width: 40vw;
   min-width: 300px;
+  padding-bottom: 1.5rem;
 }
-
+@media only screen and (max-width: 699px) {
+  .header_text {
+    max-width: 80%;
+  }
+}
 .header_text h1 {
   color: var(--color-accent2);
 }
@@ -163,21 +173,26 @@ header {
   height: 35vw;
   min-width: 300px;
   min-height: 300px;
-  background-color: var(--color-darker);
+  background-color: var(--color-secondary2);
 }
 
 /* Sections */
 #intro {
   display: flex;
-  min-height: 80vh;
-  padding: 0px 15rem;
+  min-height: 70vh;
   align-items: center;
   justify-content: space-around;
+  padding-left: 1rem;
+  padding-right: 1rem;
   flex-wrap: wrap;
   background-color: var(--color-secondary1);
 }
 #intro h2 {
   color: var(--color-accent2);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  padding-bottom: 2rem;
 }
 
 .intro_text {
@@ -190,7 +205,7 @@ header {
   height: 15vw;
   min-width: 150px;
   min-height: 150px;
-  background-color: var(--color-dark);
+  background-color: var(--color-primary1);
 }
 
 #cards {
@@ -224,6 +239,7 @@ header {
 .info_wrapper {
   padding: 0rem 1rem 0rem 1rem;
   margin-top: auto;
+  padding-top: 0.75rem;
 }
 .info_wrapper h3 {
   color: var(--color-secondary1);
